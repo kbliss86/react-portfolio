@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //components
 import Header from './components/Header';
@@ -8,7 +9,7 @@ import Navigation from './components/Navigation';
 import Project from './components/Project';
 
 //pages
-import About from './pages/About';
+import About from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
@@ -18,18 +19,20 @@ import Portfolio from './pages/Portfolio';
 import './App.css'
 
 const App = () => {
+  const [count, setCount] = useState(0);
+
   return (
     <Router>
       <div>
         <Navigation />
         <Header />
 
-        <switch>
-          <Route exact path="/aboutme" component={AboutMe} />
+        <Routes>
+          <Route exact path="/" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/portfolio" component={Portfolio} />
-        </switch>
+        </Routes>
 
         <Footer />
       </div>
