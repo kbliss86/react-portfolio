@@ -1,6 +1,10 @@
 import React from 'react';
 
 const AboutMe = () => {
-  // Your component code here
+  return (
+  <section>
+    <h2>This is my about me</h2>
+  </section>
+  )
 };
 export default AboutMe;
