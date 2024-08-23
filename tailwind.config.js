@@ -2,7 +2,12 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/HeroImage.webp')",
+        // 'hero-pattern': "url('/images.jpeg')",
+      },
+    },
   },
   plugins: [],
 }
