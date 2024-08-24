@@ -21,7 +21,7 @@ const Contact = () => {
     <section
       className="relative p-8 text-white"
       style={{
-        backgroundImage: "url('/HeroImage2.webp'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3))",
+        backgroundImage: "url('/HeroImage2.png'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3))",
         backgroundSize: 'cover',
         backgroundBlendMode: 'overlay',
       }}

@@ -30,7 +30,7 @@ const Portfolio = () => {
     <section
       className="p-8 text-white"
       style={{
-        backgroundImage: "url('/HeroImage.webp'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5))",
+        backgroundImage: "url('/HeroImage2.png'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5))",
         backgroundSize: 'cover',
         backgroundBlendMode: 'overlay',
       }}
