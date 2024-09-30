@@ -1,5 +1,5 @@
 import React from 'react';
-
+//Enhance this to make it dazzle!
 const Header = () => {
   return (
     <header className="bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900 text-black py-8 shadow-md">

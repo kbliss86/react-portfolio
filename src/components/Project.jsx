@@ -1,5 +1,5 @@
 import React from 'react';
-
+//enhance this to make it match the portfolio page - image standardization, URL and Tags!
 const Project = ({ title, description, technologies, imageUrl, projectUrl }) => {
   return (
     <div className="project bg-gray-800 border border-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
