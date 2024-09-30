@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+//enhance the form to allow for email to be sent using netlify farmework!
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',

@@ -1,5 +1,7 @@
 import React from 'react';
-
+//fix issue with text justification
+//add images to the timeline
+//enhance timeline to catalogue all my career and education milestones
 const timelineData = [
   {
     date: "2003-2009",
