@@ -35,7 +35,7 @@ const projects = [
   },
   {
     title: 'Course Planner',
-    description: 'This project was designed to offer the user the ability to add Subjects, Courses, and Assignments...',
+    description: 'This project was designed to offer the user the ability to add Subjects, Courses, and Assignments',
     technologies: 'HTML, CSS, JavaScript, TailwindCSS, Express, React, Apollo Server, GraphQL, Mongoose, MongoDB, JWT, Bcrypt',
     imageUrl: 'https://github.com/bklein1981/Course-Planner/blob/main/client/src/assets/images/screenshot.png?raw=true',
     projectUrl: 'https://github.com/bklein1981/Course-Planner',
@@ -45,7 +45,7 @@ const projects = [
   },
   {
     title: 'Meal Kit Store',
-    description: 'This was the second major project I did in my coding bootcamp...',
+    description: 'This project was designed to offer the user the ability to purchase meal kits and have them delivered to their home, users can sort and filter by category, and add items to their cart',
     technologies: 'HTML, CSS, JavaScript, TailwindCSS, Sequelize, Handlebars, Express, Bcrypt, Dotenv, MySQL2, Express-Session, Connect-Session-Sequelize',
     imageUrl: 'https://github.com/kbliss86/mealkit-store/blob/main/public/assets/mealkit-background.jpg?raw=true',
     projectUrl: 'https://github.com/kbliss86/mealkit-store',
@@ -55,7 +55,7 @@ const projects = [
   },
   {
     title: 'Trip Planner',
-    description: 'This was the first major project I did in my coding bootcamp...',
+    description: 'This app was a designed to allow users to enter in a start and end point, as well as intermediate waypoints and recommend the fastest path and list Points of interest along the way, like hotels, parks and restraunts!',
     technologies: 'HTML, CSS, JavaScript, Materialize CSS, Google Maps API, Department of Energy API, MapQuest API',
     imageUrl: 'https://github.com/kbliss86/trip-planner/blob/main/assets/resources/image.png?raw=true',
     projectUrl: 'https://github.com/kbliss86/trip-planner',
