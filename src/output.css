@@ -638,6 +638,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-16 {
+  margin-left: 4rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -748,14 +752,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.overflow-visible {
-  overflow: visible;
-}
-
-.whitespace-normal {
-  white-space: normal;
 }
 
 .rounded-full {

@@ -2,9 +2,57 @@ import React, { useState } from 'react';
 import Project from '../components/Project';
 
 const projects = [
-  //add in tags that show what technologies were used in each project, will be an array of strings that can be filterable using a dropdown
-  //add in URLs to deployed sites
-  //Organize the project by type: WebDevelopement, C#/.NET, AI/ML, etc.
+  //Web Apps
+  {
+    title: 'GrapeTree Application Portal',
+    description: 'The GrapeTree Application Portal is a chatbot-powered platform designed to streamline the applicant intake and screening process. Deployed on WordPress and powered by the Teneo.ai SDK, this system integrates deeply with various APIs and backend systems to enhance recruitment efforts and provide a seamless onboarding experience.',
+    technologies: 'JavaScript, GroovyScript, CSS, HTML, Teneo.AI, Appache HTTP Server',
+    imageUrl: 'https://github.com/kbliss86/teneo-apply-chatbot/blob/main/Screenshot.PNG?raw=true',
+    projectUrl: 'https://github.com/kbliss86/teneo-apply-chatbot',
+    siteUrl: 'https://apply.grapetree.com/',
+    tags: ['JavaScript', 'GroovyScript', 'Web App', 'Articial Intelligence', 'Chatbot'],
+    type: 'Web App',
+  },
+  {
+    title: 'GrapeTree Auto-Journal Bot',
+    description: 'The GT Journal Bot is an innovative proof-of-concept project designed to auto-transcribe phone calls and summarize them using ChatGPT. The bot then journals the conversation data directly into an Applicant Tracking System (ATS), creating records on both candidate and client profiles.',
+    technologies: 'JavaScript, GroovyScript, CSS, HTML, Teneo.AI, DeepGram.AI, ChatGPT, Appache HTTP Server DotEnv, Express.js, nodemon',
+    imageUrl: 'https://github.com/kbliss86/gt-journal-bot/blob/main/assets/images/ScreenShot.PNG?raw=true',
+    projectUrl: 'https://github.com/kbliss86/gt-journal-bot',
+    siteUrl: 'https://whispering-tor-80806-ebdc6d4789ff.herokuapp.com/',
+    tags: ['JavaScript', 'GroovyScript', 'Web App', 'Articial Intelligence', 'Chatbot', 'Speech-to-Text'],
+    type: 'Web App',
+  },
+  {
+    title: 'GrapeTree SOP RAG Bot',
+    description: 'The GrapeTree SOP Bot is an advanced RAG (Retrieve, Augment, Generate) bot designed to assist users within the GrapeTree organization by providing advice, knowledge, instructions, and direct links to Standard Operating Procedures (SOP) documents. This bot leverages Azure Cognitive Services for document indexing, alongside Teneo.AI and ChatGPT to deliver contextual and conversational responses based on user queries.',
+    technologies: 'JavaScript, GroovyScript, CSS, HTML, Teneo.AI, ChatGPT, Appache HTTP Server,Azure Cognitive Services',
+    imageUrl: 'https://github.com/kbliss86/gt-sop/blob/main/Assets/images/Screenshot.PNG?raw=true',
+    projectUrl: 'https://github.com/kbliss86/gt-sop',
+    siteUrl: 'https://kbliss86.github.io/gt-sop/',
+    tags: ['JavaScript', 'GroovyScript', 'Web App', 'Articial Intelligence', 'Chatbot', 'RAG Bot'],
+    type: 'Web App',
+  },
+  {
+    title: 'Course Planner',
+    description: 'This project was designed to offer the user the ability to add Subjects, Courses, and Assignments...',
+    technologies: 'HTML, CSS, JavaScript, TailwindCSS, Express, React, Apollo Server, GraphQL, Mongoose, MongoDB, JWT, Bcrypt',
+    imageUrl: 'https://github.com/bklein1981/Course-Planner/blob/main/client/src/assets/images/screenshot.png?raw=true',
+    projectUrl: 'https://github.com/bklein1981/Course-Planner',
+    siteUrl: 'https://lit-river-19263-fccc9a14fadb.herokuapp.com/',
+    tags: ['React', 'Express', 'Apollo Server', 'Mongoose', 'Node', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Bcrypt', 'Web App'],
+    type: 'Web App',
+  },
+  {
+    title: 'Meal Kit Store',
+    description: 'This was the second major project I did in my coding bootcamp...',
+    technologies: 'HTML, CSS, JavaScript, TailwindCSS, Sequelize, Handlebars, Express, Bcrypt, Dotenv, MySQL2, Express-Session, Connect-Session-Sequelize',
+    imageUrl: 'https://github.com/kbliss86/mealkit-store/blob/main/public/assets/mealkit-background.jpg?raw=true',
+    projectUrl: 'https://github.com/kbliss86/mealkit-store',
+    siteUrl: 'https://guarded-river-52097-feecfdad1f76.herokuapp.com/',
+    tags: ['Express', 'Node', 'MySQL', 'Sequelize', 'JavaScript', 'HTML', 'Handlebars', 'CSS', 'Tailwinds', 'API', 'Bcrypt', 'Dotenv', 'Web App'],
+    type: 'Web App',
+  },
   {
     title: 'Trip Planner',
     description: 'This was the first major project I did in my coding bootcamp...',
@@ -23,16 +71,6 @@ const projects = [
     projectUrl: 'https://github.com/kbliss86/tech-blog',
     siteUrl: 'https://kbliss-tech-blog-b4fefef9a7ce.herokuapp.com/home/login',
     tags: ['Express', 'Node', 'SQL', 'Sequelize', 'JavaScript', 'HTML', 'Handlebars', 'CSS', 'Bootstrap', 'API', 'Web App'],
-    type: 'Web App',
-  },
-  {
-    title: 'Meal Kit Store',
-    description: 'This was the second major project I did in my coding bootcamp...',
-    technologies: 'HTML, CSS, JavaScript, TailwindCSS, Sequelize, Handlebars, Express, Bcrypt, Dotenv, MySQL2, Express-Session, Connect-Session-Sequelize',
-    imageUrl: 'https://github.com/kbliss86/mealkit-store/blob/main/public/assets/mealkit-background.jpg?raw=true',
-    projectUrl: 'https://github.com/kbliss86/mealkit-store',
-    siteUrl: 'https://guarded-river-52097-feecfdad1f76.herokuapp.com/',
-    tags: ['Express', 'Node', 'MySQL', 'Sequelize', 'JavaScript', 'HTML', 'Handlebars', 'CSS', 'Tailwinds', 'API', 'Bcrypt', 'Dotenv', 'Web App'],
     type: 'Web App',
   },
   {
@@ -55,15 +93,16 @@ const projects = [
     tags: ['React', 'Express', 'Apollo Server', 'Mongoose', 'Node', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Bcrypt', 'Web App'],
     type: 'Web App',
   },
+  //Console Apps
   {
-    title: 'Course Planner',
-    description: 'This project was designed to offer the user the ability to add Subjects, Courses, and Assignments...',
-    technologies: 'HTML, CSS, JavaScript, TailwindCSS, Express, React, Apollo Server, GraphQL, Mongoose, MongoDB, JWT, Bcrypt',
-    imageUrl: 'https://github.com/bklein1981/Course-Planner/blob/main/client/src/assets/images/screenshot.png?raw=true',
-    projectUrl: 'https://github.com/bklein1981/Course-Planner',
-    siteUrl: 'https://lit-river-19263-fccc9a14fadb.herokuapp.com/',
-    tags: ['React', 'Express', 'Apollo Server', 'Mongoose', 'Node', 'JavaScript', 'HTML', 'CSS', 'Bootstrap', 'Bcrypt', 'Web App'],
-    type: 'Web App',
+    title: 'Point of Sale System',
+    description: 'This Project is designed to offer a store the ability to use a cusomizable Point of Sale System so their customers can purchase items!',
+    technologies: 'C#, .NET, File I/O',
+    imageUrl: 'https://github.com/kbliss86/c-oop-project-1-pos/blob/main/ConsolePic.PNG?raw=true',
+    projectUrl: 'https://github.com/kbliss86/c-oop-project-1-pos',
+    siteUrl: 'https://github.com/kbliss86/c-oop-project-1-pos',
+    tags: ['C#', '.Net', 'Console App',],
+    type: 'Console App',
   },
   {
     title: 'ReadMe Generator',
@@ -85,13 +124,8 @@ const projects = [
     tags: ['Node', 'JavaScript', 'Inquirer', 'Jest', 'Console App', 'Dev Tools'],
     type: 'Console App',
   },
-
 ];
 
-//break up the display of the projects by type
-//add in elements for Tags and URLs
-//find a way to standardize the image of each project 
-//make it so either the image or the entire project object is clickable to the project URL
 const uniqueTags = [...new Set(projects.flatMap(project => project.tags))]; // Unique list of all tags
 const uniqueTypes = [...new Set(projects.map(project => project.type))]; // Unique list of all types
 
