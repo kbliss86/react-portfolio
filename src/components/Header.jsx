@@ -1,8 +1,13 @@
 import React from 'react';
-//Enhance this to make it dazzle!
+import Navigation from './Navigation';
+
 const Header = () => {
   return (
+    // <header className="bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900 text-black py-8 shadow-md">
     <header className="bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900 text-black py-8 shadow-md">
+
+      <Navigation />
+
       <h1 className="text-4xl font-extrabold text-center tracking-wide" style={{ fontFamily: 'Montserrat, sans-serif' }}>
         Kendall Bliss
       </h1>

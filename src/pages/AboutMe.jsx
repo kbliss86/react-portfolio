@@ -57,7 +57,7 @@ const AboutMe = () => {
       }}
     >
       {/* Text Container */}
-      <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 mb-20">
+      <div className="relative z-10 flex flex-col justify-center items-center text-center px-4 mb-20 mt-32">
         <h2 className="text-white text-4xl font-extrabold mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           About Me
         </h2>
@@ -82,13 +82,14 @@ const AboutMe = () => {
       </div>
 
       {/* Timeline Section */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-16 text-white">
         <h2 className="text-4xl font-extrabold mb-12 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           My Journey
         </h2>
       </div>
       <div className="container mx-auto px-4">
         {timelineData.map((item, index) => (
+          //attempt to alternate allignment
           <div
             key={index}
             className={`mb-12 flex flex-col items-center ${
@@ -106,7 +107,7 @@ const AboutMe = () => {
                   <h3 className="text-3xl font-bold mb-2 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                     {item.title}
                   </h3>
-                  <p className="text-blue-400 text-xl mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                  <p className="text-blue-400 text-xl mb-4 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                     {item.date}
                   </p>
                 </div>

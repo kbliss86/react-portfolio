@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Project from '../components/Project';
+import Project from '../components/Project';//no longer needed as i am using the code from the portfolio compnoent
 
 const projects = [
   //Web Apps
@@ -199,16 +199,18 @@ const Portfolio = () => {
               .map((project, index) => (
                 <div
                   key={index}
-                  className="project-card cursor-pointer hover:shadow-lg transition-shadow"
-                  onClick={() => window.open(project.siteUrl, '_blank')} // Open project URL on click
+                  className="project-card hover:shadow-lg transition-shadow hover:border-4 hover:border-white"
+                  // onClick={() => window.open(project.siteUrl, '_blank')} // Open project URL on click
                   style={{ minHeight: '300px' }}
                 >
+                  <a href={project.siteUrl} target="_blank" rel="noopener noreferrer">
                   <img
                     src={project.imageUrl}
                     alt={project.title}
-                    className="object-cover h-48 w-full rounded-lg"
+                    className="object-cover cursor-pointer h-48 w-full rounded-lg"
                     style={{ height: '200px', width: '100%', objectFit: 'cover' }}
                   />
+                  </a>
                   <div className="p-4">
                     <h3 className="text-2xl font-semibold">{project.title}</h3>
                     {/* Full description, no truncation */}
@@ -223,13 +225,13 @@ const Portfolio = () => {
                     </div>
                     <div className="mt-4">
                       <strong>Repository:</strong>{' '}
-                      <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="underline text-blue-400">
+                      <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="underline text-blue-400 cursor-pointer">
                         {project.projectUrl}
                       </a>
                     </div>
                     <div className="mt-2">
                       <strong>Live Site:</strong>{' '}
-                      <a href={project.siteUrl} target="_blank" rel="noopener noreferrer" className="underline text-blue-400">
+                      <a href={project.siteUrl} target="_blank" rel="noopener noreferrer" className="underline text-blue-400 cursor-pointer">
                         {project.siteUrl}
                       </a>
                     </div>

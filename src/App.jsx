@@ -12,20 +12,13 @@ import '../output.css'
 const App = () => {
   return (
     <div>
+      {/* <Navigation /> */}
       <Header />
-      <Navigation />
       <Outlet />
       <Footer />
     </div>
   );
 };
 
-// const App = () => {
-//   return (
-//     <Layout>
-//       <h1>Hello World</h1>
-//     </Layout>
-//   );
-// }
 
 export default App;
